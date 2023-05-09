@@ -6,6 +6,7 @@ import NearbyJobCard from "../../common/cards/nearby/NearbyJobCard";
 import useFetch from "../../../hooks";
 
 const Nearbyjobs = () => {
+  const router = useRouter();
   const { data, isLoading, error } = useFetch("search", {
     query: "React Developer",
     num_pages: 1,
